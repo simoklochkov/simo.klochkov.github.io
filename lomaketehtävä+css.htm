@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Lomaketehtävä + css harjoittelu </title>
+    <style>
+        label {
+            display: inline-block;
+            width: 120px;
+            background-color: lightcoral;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        div {
+            margin-bottom: 8px;
+            background-color: lightcoral;
+
+        }
+
+        .tiedot {
+            margin-top: 8px;
+            display: flex;
+            gap: 40px;
+            background-color: rgb(163, 173, 208);
+        }
+
+        .vasen {
+            margin-top: 10px;
+            background-color: lightcoral;
+        }
+
+        .oikea {
+
+            margin-top: 10px;
+            background-color: lightcoral;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+
+        .oikea label {
+            width: auto;
+            display: inline;
+            background-color: transparent;
+        }
+
+        .rivi {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tausta {
+            background-color: rgb(123, 239, 107);
+            color: rgb(54, 23, 148);
+
+
+        }
+    </style>
+</head>
+
+<body class="tausta">
+
+
+
+    <fieldset>
+
+
+        <legend> Contact Information </legend>
+        <div class="tiedot">
+
+            <div class=" vasen">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <div class="vasen">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="vasen">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="vasen">
+                    <label for="phone">Telephone:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                </div>
+            </div>
+
+            <div class="oikea">
+                <p style="margin-top: 0;">Preferred contact method:</p>
+
+
+                <div class="rivi">
+                    <input type="checkbox" id="contact_email" name="contact_email">
+                    <label for="contact_email">Email</label>
+                </div>
+                <div class="rivi">
+
+                    <input type="checkbox" id="contact_phone" name="contact_phone">
+                    <label for="contact_phone">Telephone</label>
+
+                </div>
+            </div>
+
+    </fieldset>
+
+    <div class="tiedot">
+        <fieldset>
+
+            <legend>Feedback</legend>
+            <label for="aihe">Message subject:</label>
+            <input type="text" id="aihe" name="aihe">
+            <br>
+
+
+            <label for="palaute"></label>
+            <textarea id="palaute" name="palaute" rows="14" cols="50"></textarea>
+            <br><br>
+
+            <label for="file"> Attach a file:</label>
+            <input type="file" id="file" name="file">
+            <br><br>
+
+            <input type="submit" value="Send">
+
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
