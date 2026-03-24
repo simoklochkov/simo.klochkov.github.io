@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>CSS + kurssitehtävä</title>
+    <style>
+        .taulukko {
+            font-size: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 5px;
+            background-color: lightblue;
+
+        }
+
+        .otsikko {
+            font-size: 30px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        .taustateksti {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(193, 232, 154);
+            font-family: Arial, sans-serif;
+
+        }
+
+        .taulukko>div {
+            border-bottom: 1px solid black;
+            padding: 5px;
+            border-right: 1px solid black;
+        }
+
+        .taulukko>div:hover {
+            background-color: #cceeff;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset style="background-color: rgb(244, 153, 153);">
+        <legend class="taustateksti">Käydyt kurssit</legend>
+        <div class="taulukko">
+            <div class="otsikko">Kurssit</div>
+            <div class="otsikko">Opintopisteet</div>
+            <div class="otsikko">Kuvaus</div>
+
+            <div>Ohjelmoinnin perusteet</div>
+            <div>5 op</div>
+            <div>Kurssilla opitaan ohjelmoinnin perusteet</div>
+
+            <div>Matematiikka</div>
+            <div>4 op</div>
+            <div>Kurssilla opitaan liike-elämän matematiikkaa</div>
+
+            <div>Tietokannat</div>
+            <div>5 op</div>
+            <div>Kurssilla opitaan tietokantojen perusteet</div>
+
+            <div>Englanti</div>
+            <div>3 op</div>
+            <div>Kurssilla opitaan työelämän englannin kielen perusteet</div>
+
+            <div>Taloushallinto</div>
+            <div>5 op</div>
+            <div>Onko tase tasan?</div>
+
+            <div>Markkinointi</div>
+            <div>4 op</div>
+            <div>Markkinoinnin tehokoinojen käyttö</div>
+
+
+        </div>
+    </fieldset>
+</body>
+
+</html>
