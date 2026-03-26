@@ -1,1 +1,1 @@
-Semen Klotchkov Github Pages linkit
+simo.klochkov@github.io
